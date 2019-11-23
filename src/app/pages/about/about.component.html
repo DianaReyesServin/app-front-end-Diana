@@ -1,0 +1,15 @@
+<div class="card-columns">
+  
+    <div class="card" *ngFor="let paises of mispaises">
+        <img [src]="paises.flag" class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{paises.name}}</h5>
+        <p class="card-text">{{paises.capital}}</p>
+        <p class="card-text">{{paises.population}}</p>
+        <p *ngFor="let languages of paises.languages" class="card-text">{{languages.name}}</p>
+        <p *ngFor="let currencies of paises.currencies" class="card-text">{{currencies.code}}</p>
+     
+      </div>
+    </div>
+    
+  </div>
